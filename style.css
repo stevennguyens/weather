@@ -2,4 +2,143 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Karla', Helvetica, sans-serif
+}
+
+:root {
+    --dark: rgb(45, 53, 70);
+    --dark-opaque: rgb(57, 67, 91);
+    --white: #f4f3f3;
+    --white-opaque: #f7f7f77f;
+    --grey-opaque: #e5e5e573;
+    --baby-blue:rgb(200, 229, 254);
+    --blue:rgb(120, 153, 182);
+    --royal-blue: rgb(64, 93, 143);
+}
+
+body {
+    background: var(--white);
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    padding: 40px;
+    color: var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* logo container */
+.logo-container {
+    position: absolute;
+    left: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-container span {
+    padding-right: 10px;
+    color: var(--baby-blue);
+    font-size: 2rem;
+}
+
+/* search container */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container span {
+    position: absolute;
+    padding-left: 20px;
+}
+
+#search {
+    border-radius: 23px;
+    border: none;
+    width: 600px;
+    padding: 15px 20px 15px 52px;
+    background: var(--grey-opaque);
+    color: var(--dark);
+    font-size: 1rem;
+}
+
+/* WEATHER */
+.weather {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px; 
+}
+/* weather container */
+.weather-container {
+    width: 600px;
+    padding: 30px;
+    margin: 50px;
+    border-radius: 20px;
+    background: var(--baby-blue);
+    color: var(--royal-blue);
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.temp-btn {
+    background: var(--white-opaque);
+    border: none;
+    padding: 9px 15px 8px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--blue)
+}
+
+.temp-btn:hover {
+    color: var(--royal-blue)
+}
+
+.location .name {
+    font-size: 1.3rem;
+    font-weight: 700
+}
+
+.location .now {
+    color: var(--blue);
+}
+
+.temperatures {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.temperature-description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.temperature {
+    font-size: 7.5rem;
+}
+
+.sub-temp {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+
+.sub-temp div {
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
 }
